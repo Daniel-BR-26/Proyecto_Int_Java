@@ -322,3 +322,87 @@ section image{
 .eliminar-comentario :hover{
     background-color: #a71d2a;
 }
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow-x:auto;
+        padding: 10px 0px;
+        gap: 10px;
+    }
+
+    .navbar {
+        margin: 5px 0;
+        display: block;
+        text-align: center;
+    }
+
+    #logo img {
+        height: 70px;
+        width: auto;
+    }
+
+    .modo {
+        margin-top: 10px;
+        align-self: center;
+        position: static;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: white;
+    }
+
+    .content {
+        padding-top: 100px; 
+    }
+
+    #portada img {
+        height: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .introduccion {
+        padding: 20px;
+    }
+
+    .introduccion h1 {
+        font-size: 20px;
+    }
+
+    .introduccion p {
+        padding: 0;
+        text-align: justify;
+        font-size: 10px;
+    }
+
+    #textobajo{
+        font-size: 10px;
+        padding: 10px 0px;
+    }
+
+    .secciones {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 20px 0;
+    }
+
+    .evento {
+        max-width: 90%;
+    }
+
+    .evento img {
+        width: 100%;
+    }
+
+    .opinion {
+        padding: 20px;
+    }
+}
