@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header>
+    <nav class="navegacion">
+
+        <div id="logo">
+            <img src="./recursos/onlinetickets.png" alt="Logo Online Tickets" />
+        </div>
+
+        <div class="navbar">
+            <a href="#">Home</a>
+        </div>
+        <div class="navbar">
+            <a href="#">Eventos</a>
+        </div>
+        <div class="navbar">
+            <a href="#">Contácto</a>
+        </div>
+        <div>
+            <button class="modo" onclick="modoc()">Modo Oscuro</button>
+        </div>
+    </nav>
+</header>
+
+    <main class="content">
+
+        <div id="portada">
+            <img id="imagenportada" src="./recursos/portada1.png" alt="festivales"/>
+        </div>
+
+        <div class="introduccion">
+            <h1><Strong>Mi Online Tickets</Strong></h1>
+            <p><Strong>Online Tickets</Strong> te invita a asistir a los mejores eventos a nivel nacional.</p>
+            <p id="textobajo">Tu experiencia inicia desde <strong>Online Tickets</strong>, la mejor plataforma para comprar tus boletos,
+            y ganar increibles premios por asistir a distintos eventos a traves de nuestra plataforma.</p>
+            <p><Strong id="precat">Conoce nuestras categorias:</Strong></p>
+        </div>
+
+        <div class="secciones">
+            <div class="evento">
+                <img src="./recursos/deportes.png" alt="Eventos Deportivos">
+                <h4>Deportes</h4>
+            </div>
+            <div class="evento">
+                <img src="./recursos/Festivales.png" alt="Eventos Musicales">
+                <h4>Conciertos y Festivales</h4>
+            </div>
+            <div class="evento">
+                <img src="./recursos/Arte.png" alt="Eventos Artísticos">
+                <h4>Arte</h4>
+            </div>
+            <div class="evento">
+                <img src="./recursos/Expo.png" alt="Conferencia y Exposiciones">
+                <h4>Expos</h4>
+            </div>
+        </div>
+
+        <div class="opinion">
+            <h2><Strong>Califica tu experiencia</Strong></h2>
+            <p>Ayudanos a mejorar nuestro servicio, comparte tu experiencia en <strong>Online Tickets</strong></p>
+            <div class="formulario" id="campos">
+                <h3>Ingresa tu opinión</h3>
+                <input type="text" id="nombre" placeholder="Nombre">
+                <span class="error" id="error-nombre"></span>
+                <input type="email" id="email" placeholder="Correo">
+                <span class="error" id="error-email"></span>
+                <textarea id="comentario" placeholder="Ingresa tu comentario"></textarea>
+                <span class="error" id="error-mensaje"></span>
+                <button onclick="validarFormulario()">Enviar</button>
+            </div>
+            <div id="comentarios-publicados"></div>
+        </div>
+    </main>
+    <script src="./adm.js"></script>
+</body>
+</html>
